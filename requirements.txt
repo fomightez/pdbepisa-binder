@@ -1,0 +1,16 @@
+numpy
+pandas
+matplotlib
+biopython
+intermine
+seaborn
+scipy
+statsmodels
+nbgitpuller
+openpyxl
+sh
+snakemake
+jupytext
+BeautifulSoup4
+html2text
+
