@@ -1,7 +1,7 @@
 # pdbepisa-binder
 Analysis of PDBePISA-related data via active Jupyter sessions provided via MyBinder.org. Adapt the demonstrations to analyze your favorite structures.
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/fomightez/pdbsum-binder/main?urlpath=%2Fnotebooks%2Findex.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/fomightez/pdbepisa-binder/main?urlpath=%2Fnotebooks%2Findex.ipynb)
 
 
 *tl;dr:*  
