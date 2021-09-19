@@ -11,6 +11,7 @@ openpyxl
 sh
 snakemake
 jupytext
+rich
 BeautifulSoup4
 html2text
 
