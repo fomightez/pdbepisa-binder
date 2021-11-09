@@ -46,6 +46,8 @@ I, Wayne, did share Jupyter/Python-based utilities for use with the data availab
 
 There is also jsPISA, which is [supposedly](https://pubmed.ncbi.nlm.nih.gov/25908787/) an improved user interface; however, I don't see a way to use access as an API, several PDB entries I put in gave the error that they did not exist, and when I tried with [4fgf that shows a very informative interface table and PDBePISA](http://www.ebi.ac.uk/pdbe/pisa/cgi-bin/piserver?qi=4fgf), I was not able to see equivalent at jsPISA. jsPISA is maintained by CCP4 [here](http://www.ccp4.ac.uk/pisa).
 
+[Louis](https://www.biostars.org/u/9020/) has [a script](https://gist.github.com/lmmx/91515d38a1fc0644268f#file-getxml-py) that gets HTML (or is it XML?) for a lot of PDB indentifiers. It allows for interrupted/resumed download.
+
 
 ## Related items by me
 
