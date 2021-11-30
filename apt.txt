@@ -1,0 +1,1 @@
+libmagick++-dev # added based on https://github.com/ropensci/magick/issues/198#issuecomment-504039804 when I was trying to add install of magick package ; first worked out in https://github.com/fomightez/rayshader-binder/blob/master/apt.txt
