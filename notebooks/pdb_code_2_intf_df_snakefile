@@ -232,11 +232,11 @@ https://carpentries-incubator.github.io/workflows-snakemake/03-wildcards/index.h
 '''
 rule run_pisa_interface_list_to_df_for_pdb:
     input:
-        cmd = 'pisa_interface_list_to_df.py',
+        scrpt = 'pisa_interface_list_to_df.py',
         code_specifier_file = "pdb_{code}"+suffix_to_use_for_initiating_files
     params: code = "{code}"
     output: "{code}"+suffix_to_use_for_picked_dfs
-    shell: 'python {input.cmd} {params.code};rm {input.code_specifier_file}'
+    shell: 'python {input.scrpt} {params.code};rm {input.code_specifier_file}'
 
 
 
