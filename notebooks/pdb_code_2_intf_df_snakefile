@@ -129,6 +129,8 @@ with open(file_listing_codes) as file:
 # corresponding final file as the value to make the initiating files with the 
 # PDB codes in the name that will be used to trigger making a dataframe with the 
 # interface data for the PDB code in the file's name.
+# Skips making the initiating intermediate if the resulting picked dataframe 
+# file already exists.
 # I originally had something similar to this part as a snakemake rule with 
 # `input: file_listing_codes` & `output: initiating_file`; however, that causes
 # an issue because a change to the file 'file_listing_codes' causes snakemake to
@@ -137,12 +139,15 @@ with open(file_listing_codes) as file:
 # the next steps. As a result, adding a single PDB code and running snakemake 
 # was causing the entire workflow to be run for ALLL PDB codes. Not ideal as
 # snakemake workflow where the idea is you can add stuff after the first run & 
-# it will only deal with the additional needs.
+# it will only deal with the additional needs. Having it here where snakemake 
+# isn't using the input to make the output makes it easier. Don't have to make 
+# it more complex. Easier when starting with snakemake after the step where the
+# initiating files needed are made.
 for initiating_file, picked_df_file in intermediate_to_finals_dict.items():
     pdb_code = initiating_file.split(suffix_to_use_for_initiating_files,1)[0]
     if not os.path.isfile(picked_df_file):
         write_string_to_file(pdb_code,initiating_file)
-
+# END OF PREPARATION------------------------------------------------------------
 
 
 
@@ -215,10 +220,12 @@ rule devclean:
 
 # Make a dataframe for each PDB code
 '''
+Uses `pisa_interface_list_to_df.py` for each PDB code in the initiating file
+names.
 Use the `params` keyword to specify parameter based on the wildcard, which in
 this case is the PDB identifier code.
 '''
-rule run_pisa_interface_list_to_df_for_each:
+rule run_pisa_interface_list_to_df_for_pdb:
     input:
         cmd = 'pisa_interface_list_to_df.py',
         code_specifier_file = "pdb_{code}"+suffix_to_use_for_initiating_files
