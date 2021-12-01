@@ -224,6 +224,11 @@ Uses `pisa_interface_list_to_df.py` for each PDB code in the initiating file
 names.
 Use the `params` keyword to specify parameter based on the wildcard, which in
 this case is the PDB identifier code.
+By including `pisa_interface_list_to_df.py` as input, this rule will be run 
+again if the script is edited. (See about `wordcount.py` under 
+'Handling dependencies differently' as 
+https://carpentries-incubator.github.io/workflows-snakemake/03-wildcards/index.html
+.)
 '''
 rule run_pisa_interface_list_to_df_for_pdb:
     input:
