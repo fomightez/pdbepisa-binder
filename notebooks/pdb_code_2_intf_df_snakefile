@@ -60,7 +60,7 @@ now = datetime.datetime.now()
 
 
 # FILES THAT WILL BE GENERATED--------------------------------------------------
-# initiating_files #initiating files with PDB codes in tname so they look like 
+# initiating_files #initiating files with PDB codes in name so they look like 
 # `pdb_<code>_intf_2_df.txt` to be use to trigger making output files
 # pickled_dfs_files # output of pickled dataframe for 
 # each PDB code, will look like `<code>_PISAinterface_summary_pickled_df.pkl`
