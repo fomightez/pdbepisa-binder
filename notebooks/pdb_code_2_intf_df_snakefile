@@ -10,7 +10,7 @@
 # `interface_data_2_df_codes.txt` where each line corresponds to the 
 # alphanumeric that is the PDB identifier code for a structure.
 # 
-# To help claify that, the following code between the dashed lines
+# To help clarify that, the following code between the dashed lines
 # can have the starting `#`s removed at the start of each line and that code can 
 # be run in a Jupyter notebook to make a list involving PDB entries 6kiv, 6kix, 
 # and 6kiz:
