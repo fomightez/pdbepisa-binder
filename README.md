@@ -48,6 +48,8 @@ There is also jsPISA, which is [supposedly](https://pubmed.ncbi.nlm.nih.gov/2590
 
 [Louis](https://www.biostars.org/u/9020/) has [a script](https://gist.github.com/lmmx/91515d38a1fc0644268f#file-getxml-py) that gets HTML (or is it XML?) for a lot of PDB indentifiers. It allows for interrupted/resumed download.
 
+[AlphaFold-Multimer Local Interaction Score (AFM-LIS)](https://github.com/flyark/AFM-LIS) calculates the Local Interaction Score (LIS) and the Local Interaction Area (LIA) which may be useful in conjunction / comparison with PDBePISA data.
+
 
 ## Related items by me
 
